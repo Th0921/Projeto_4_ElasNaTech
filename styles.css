@@ -1,0 +1,186 @@
+
+
+html{
+    font-family: sans-serif;
+}
+
+.maxWidth{
+    max-width: 90em;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header-logo{
+    width: 5.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header-nav{
+    background-color: pink;
+}
+
+ul {
+    margin: 0;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header-nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header-nav a:hover{
+    background-color: color-mix(in srgb, rgb(222, 77, 101), #ffffff 20%);
+}
+
+@media screen and (min-width:48em){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-logo{
+        margin-left: 2em;
+    }
+    .header-nav{
+        background-color: initial;
+    }
+    .header-nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+    .header-nav li{
+        display: inline-block;
+    }
+    .header-nav a{
+        color: pink;
+        border-radius: 5px;
+    }
+    .header-nav a:hover{
+        background-color: color-mix(in srgb, rgb(222, 77, 101), #ffffff 80%);
+    }
+}
+
+.trailer{
+    background-color: #e4f2eb;
+    padding-bottom: 1.5em 1em 1em 1.5em;
+    line-height: 1.5em;
+   
+}
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer-title{
+    margin-top: 0;
+    padding-top: .5em;
+    color: rgb(171, 41, 63);
+}
+
+.trailer-title h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.trailer-title p{
+    font-size: 1.1em;
+}
+
+.trailer-botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: pink;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.trailer-botao:hover{
+    background-color: color-mix(in srgb, rgb(222, 77, 101), #ffffff 20%);
+}
+
+@media screen and (min-width:48em){
+    .trailer{
+        align-items: center;
+        background-image: url(./cor\ de\ fundo.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+    .trailer-title p{
+        margin-bottom: 2em;
+    }
+}
+
+.main-container{
+    background-color: #e1d9d9;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.main-container div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main-container-title{
+    color: rgb(171, 41, 63);
+}
+
+.icone-imagem{
+    width: 5.5em;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+@media screen and (min-width:48em){
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
+
+footer{
+    background-color: rgb(171, 41, 63);
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+
+}
